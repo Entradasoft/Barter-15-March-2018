@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +16,43 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundSignUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-Px-9MO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TransparentBgWithoutBorder.png" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-NY-LjF">
+                                <rect key="frame" x="20" y="50" width="335" height="587"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_option_logo_new.png" translatesAutoresizingMaskIntoConstraints="NO" id="yeA-E7-9e7">
+                                <rect key="frame" x="25" y="140" width="325" height="407"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yeA-E7-9e7" firstAttribute="centerX" secondItem="GFS-NY-LjF" secondAttribute="centerX" id="FWU-4Q-igG"/>
+                            <constraint firstItem="yeA-E7-9e7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="IF9-fy-XcV"/>
+                            <constraint firstItem="GFS-NY-LjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L9I-Si-sxz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GFS-NY-LjF" secondAttribute="trailing" constant="20" id="LXa-cd-Olb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GFS-NY-LjF" secondAttribute="bottom" constant="30" id="NHr-D0-yQc"/>
+                            <constraint firstItem="Jun-Px-9MO" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Pmk-kX-hsk"/>
+                            <constraint firstItem="yeA-E7-9e7" firstAttribute="centerY" secondItem="GFS-NY-LjF" secondAttribute="centerY" id="RTf-g6-gr2"/>
+                            <constraint firstItem="Jun-Px-9MO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UFz-Nl-fwc"/>
+                            <constraint firstItem="Jun-Px-9MO" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="afu-Hu-0z6"/>
+                            <constraint firstItem="yeA-E7-9e7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cuL-Bh-Khj"/>
+                            <constraint firstItem="GFS-NY-LjF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="euT-hr-OHY"/>
+                            <constraint firstAttribute="trailing" secondItem="Jun-Px-9MO" secondAttribute="trailing" id="wbc-so-VkB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-255.19999999999999" y="375.56221889055473"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackgroundSignUp.png" width="241" height="434"/>
+        <image name="TransparentBgWithoutBorder.png" width="249" height="428"/>
+        <image name="login_option_logo_new.png" width="338" height="338"/>
+    </resources>
 </document>
